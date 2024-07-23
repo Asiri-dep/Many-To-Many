@@ -12,8 +12,10 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Embeddable
 public class EnrollPk implements Serializable {
-    @Column(name = "student_id")
-    private String studentId;
-    @Column(name = "course_code")
-    private String courseCode;
+    private Student student;
+    private Course course;
+//    @Column(name = "student_id")
+//    private String studentId;
+//    @Column(name = "course_code")
+//    private String courseCode;
 }
